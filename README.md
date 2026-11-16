@@ -8,7 +8,9 @@ Ten pixel companions, an animation workshop, and a little theater.
 
 [中文说明](README.zh-CN.md) · [Live gallery](https://c0feline1.github.io/c0-studio-pixel-cast/) · [Download all characters](downloads/all-characters.zip) · [Sprite guide](assets/README.md) · [Credits & licenses](ATTRIBUTION.md)
 
-![The Pixel Cast gallery in its default dark theme](docs/images/gallery-dark.png)
+![Pixel Cast — the C0 Studio pixel theater](docs/images/pixel-cast-banner.png)
+
+**[Explore the interactive gallery →](https://c0feline1.github.io/c0-studio-pixel-cast/)** &nbsp; · &nbsp; **[Get the free pack on itch.io ↗](https://c0feline1.itch.io/c0-studio-pixel-cast)**
 
 </div>
 
@@ -22,9 +24,15 @@ A collection by **C0 STUDIO**, inspired by the creator's everyday experiences wi
 
 The studio trio: **F1 · C0 · X0**. The AI-inspired companions: **Offline Dragon · Rice Whale · Lady Grey · Sugar Twins · Lady Mischief · Moon Archivist · Sugar Bun**.
 
+## A little cast, a lot of character
+
+A wing stretch, a snack break, a mischievous flourish. Real animations from the included sprites, each with its own rhythm.
+
+![Offline Dragon, Rice Whale and Lady Mischief performing different signature actions](docs/images/characters-personality.gif)
+
 ## Aseprite-ready files
 
-All three asset ZIPs include **40 `.aseprite` files**: an animation document, expression poses, portrait and badge for each character. Open and edit immediately; actions and facing directions are tagged. These contain flattened pixel artwork, not reconstructed drawing layers. See the [Aseprite guide](assets/README.md#open-directly-in-aseprite).
+The complete collection includes **40 `.aseprite` files** (12 in the studio trio, 28 in the seven-companion pack): an animation document, expression poses, portrait and badge for each character. Open and edit immediately; actions and facing directions are tagged. These contain flattened pixel artwork, not reconstructed drawing layers. See the [Aseprite guide](assets/README.md#open-directly-in-aseprite).
 
 ## A gallery you can play with
 
@@ -34,9 +42,15 @@ All three asset ZIPs include **40 `.aseprite` files**: an animation document, ex
 - Switch **EN / 中文** and **Day / Night** in the top-right corner. A fresh visit starts in English and dark mode; your choices are remembered.
 - Run locally: no account, API key, build step or external service is required.
 
-![Animation controls and frame inspection](docs/images/workshop.png)
+### A moment from the little theater
+
+![F1 hosting a very lively meeting](docs/images/f1-little-theater.gif)
+
+**[Choose a character and watch their story →](https://c0feline1.github.io/c0-studio-pixel-cast/#characterTheater)**
 
 ## Start here
+
+**On itch.io:** [download for free or leave an optional donation](https://c0feline1.itch.io/c0-studio-pixel-cast). The same character collection, ready to use.
 
 **Just the assets:** download [all ten characters](downloads/all-characters.zip), [the studio trio](downloads/studio-cast.zip), or [the seven AI-inspired companions](downloads/ai-inspired-cast.zip). Unzip and follow the included sprite guide.
 
@@ -83,3 +97,6 @@ Changes: unmodified [or describe your changes]
 ## Feedback
 
 Found a broken animation or translation? Open an issue with the character, action, browser and steps to reproduce. Contributions are welcome; please keep native pixel dimensions, motion timing and original voice patterns intact unless the change explicitly concerns them.
+
+
+<sub>The theater banner is an AI-assisted promotional illustration based on the original designs. The animated previews show the actual downloadable pixel sprites.</sub>

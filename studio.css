@@ -1,0 +1,29 @@
+/* Pixel Cast: the theater outside the sprite sheet. */
+body{background-image:radial-gradient(ellipse at 50% 0,rgba(135,85,175,.12),transparent 750px)}
+.studio-banner{margin:26px 0 0;position:relative;border:1px solid var(--line);background:#1a1029;overflow:hidden;box-shadow:0 12px 45px #10091c20}
+.studio-banner img{display:block;width:100%;height:auto;aspect-ratio:3/1;object-fit:cover;image-rendering:auto}
+.studio-banner>span{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);padding:4px 15px;background:#160e27dd;border:1px solid #8f6bab;color:#e8d7f8;font:10px/1.6 var(--mono);letter-spacing:1px;white-space:nowrap}
+.hero{padding:44px 0 38px;gap:48px}
+.hero h1{font-size:clamp(34px,3.7vw,50px);margin:16px 0;letter-spacing:-1.8px}
+.hero-description{max-width:420px}
+.hero-links{flex-wrap:wrap;gap:15px;margin-top:24px}
+.hero-links .text-link{flex-basis:100%;width:fit-content;max-width:max-content;font-size:12px}
+.cast-illustration{transform:none;background:var(--white);box-shadow:8px 8px 0 var(--lavender)}
+.cast-illustration:before{inset:8px;pointer-events:none}
+.art-label{letter-spacing:1.8px}
+.spec-strip{background:var(--white);padding:18px 24px;border:1px solid var(--line);box-shadow:0 4px 0 var(--lavender)}
+.section-heading h2{letter-spacing:-1px}
+.section-heading .eyebrow{color:var(--purple)}
+.workshop,.theater-frame{border-radius:3px}
+.theater-section{position:relative}
+.theater-cast{background:var(--white);padding:8px;gap:4px}
+.theater-cast button{border-radius:2px}
+.itch-callout{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:30px;margin:0 0 30px;border:1px solid var(--line);background:linear-gradient(115deg,var(--lavender),var(--white));box-shadow:5px 5px 0 var(--lavender)}
+.itch-callout h3{font-size:25px;margin:9px 0}
+.itch-callout p:not(.eyebrow){color:var(--muted);font-size:13px}
+.itch-callout .button{flex-shrink:0}
+footer{margin-top:30px}
+@media(min-width:1100px){.collection,.theater-section,.download-section{padding-top:68px}}
+@media(max-width:800px){.hero{gap:24px}.hero-links{gap:12px}.studio-banner>span{font-size:8px;bottom:7px}.itch-callout{padding:22px}.itch-callout h3{font-size:22px}}
+@media(max-width:600px){.studio-banner{margin-top:16px}.studio-banner>span{display:none}.hero{padding:30px 0;gap:30px}.hero h1{font-size:38px}.cast-illustration{margin:0 5px 0 0}.spec-strip{padding:16px;gap:16px}.itch-callout{flex-direction:column;align-items:flex-start}.itch-callout .button{width:100%}.site-header nav{overflow-x:auto}.hero-links .button{min-height:44px}.studio-banner img{min-height:112px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

@@ -4,7 +4,9 @@
 
 [English](README.md) · [在线预览](https://c0feline1.github.io/c0-studio-pixel-cast/) · [下载全部角色](downloads/all-characters.zip) · [素材规格](assets/README.md) · [署名与创作说明](ATTRIBUTION.md)
 
-![默认黑夜主题的角色展示页](docs/images/gallery-dark.png)
+![Pixel Cast 紫色像素剧场](docs/images/pixel-cast-banner.png)
+
+**[进入互动展示 →](https://c0feline1.github.io/c0-studio-pixel-cast/)** · **[去 itch.io 免费下载 ↗](https://c0feline1.itch.io/c0-studio-pixel-cast)**
 
 由 **C0 STUDIO** 创作的十位像素伙伴，附完整网页、动画工作台和小剧场。你可以免费使用、修改和商用素材，按 CC BY 4.0 要求署名即可。
 
@@ -17,9 +19,15 @@
 - 角色预览、逐帧查看、表情和朝向切换、PNG 单帧与图集导出。
 - 默认英文和黑夜主题，右上角切换中文/英文、白天/黑夜，并记住选择。
 
+## 各有各的小动作
+
+断线龙王伸展龙翼，干饭鲸抱碗干饭，瑟瑟大人转转战斧。下面是素材中的真实动画，每位伙伴都有自己的节奏。
+
+![三位伙伴的专属动作](docs/images/characters-personality.gif)
+
 ## Aseprite 直接编辑
 
-三个素材 ZIP 均包含 40 个 `.aseprite` 文件，每位角色 4 个：
+十人完整包包含 40 个 `.aseprite` 文件；三人组包包含 12 个，七人包包含 28 个，每位角色 4 个：
 
 - 角色 ID 同名文件：全部 16 个动作，384 帧、32 个动作与朝向标签，例如 `idle_right`、`idle_left`。
 - `expressions.aseprite`：12 种表情 × 2 个朝向，共 24 帧，按表情名称标记；100 毫秒仅供浏览，不表示原动作时长。
@@ -31,6 +39,8 @@
 
 ## 怎么使用
 
+也可以直接在 **[itch.io 页面](https://c0feline1.itch.io/c0-studio-pixel-cast)** 免费下载；捐赠完全自愿。
+
 只需要素材：下载[十人完整包](downloads/all-characters.zip)、[工作室三人组](downloads/studio-cast.zip)或[七位 AI 灵感伙伴](downloads/ai-inspired-cast.zip)。
 
 想要网页和源码：点击 GitHub 的 **Code → Download ZIP**，解压后打开 `index.html`，保持旁边文件夹完整即可。也可以在仓库目录运行 `python -m http.server 8000`，然后访问 `http://localhost:8000`。无需账号、API 密钥或构建步骤。
@@ -39,7 +49,11 @@
 
 Godot `.tres` 是导入示例，不包含完整角色控制器；默认循环，请按需要调整一次性动作。原始 ID、时序和中文动作备注保留，元数据添加了 `nameEn` 英文名称。
 
-![动画工作台](docs/images/workshop.png)
+## 小剧场里的一刻
+
+![F1 的猫猫大会](docs/images/f1-little-theater.gif)
+
+**[选择一位伙伴，看看他的故事 →](https://c0feline1.github.io/c0-studio-pixel-cast/#characterTheater)**
 
 ## 创作说明
 
@@ -59,3 +73,6 @@ Godot `.tres` 是导入示例，不包含完整角色控制器；默认循环，
 网页和绘制程序代码采用 **[MIT](licenses/MIT.txt)**，分发时保留版权及许可文本；代码绘制出的美术仍采用 CC BY 4.0。字体保留[各自原始许可证](ATTRIBUTION.md)。
 
 `tools/package.py` 可用 Python 标准库重新生成三个素材 ZIP。欢迎通过 Issues 反馈角色、动作或翻译问题。
+
+
+<sub>剧场横幅是基于原创角色设计制作的 AI 辅助宣传插画；动图展示的是实际可下载的像素素材。</sub>

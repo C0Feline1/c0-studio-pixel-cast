@@ -52,7 +52,20 @@
    if(view==='portrait'){let im=portraits.get(selected);if(!im){im=new Image();im.src='portraits/'+selected+'.png';im.onload=()=>{if(view==='portrait')paint();};portraits.set(selected,im);}if(im.complete&&im.naturalWidth){const scale=Math.floor(310/im.naturalHeight);ctx.drawImage(im,(canvas.width-im.naturalWidth*scale)/2,(canvas.height-im.naturalHeight*scale)/2,im.naturalWidth*scale,im.naturalHeight*scale);}return;}
    ctx.drawImage(kit(selected).frame(selected,action,frame,direction,expression),168,24,240,320);
  }
- function paintHero(now){const g=hero.getContext('2d');g.clearRect(0,0,640,300);g.imageSmoothingEnabled=false;ids.forEach((id,i)=>{const col=i%5,row=Math.floor(i/5),x=35+col*119,y=row*143+8;g.fillStyle='#d8cce0';g.fillRect(x-5,y+122,92,2);g.drawImage(kit(id).frame(id,'idle',reduce.matches?0:Math.floor(now/kit(id).states.idle.frameMs)%12,'right','auto'),x,y,84,112);});}
+ function paintHero(now){
+   const g=hero.getContext('2d');g.clearRect(0,0,640,300);g.imageSmoothingEnabled=false;
+   const accents=['wave','read','work','coffee','cheer','talk','sit','wave','read','nap'];
+   ids.forEach((id,i)=>{
+     const k=kit(id),unique=k.uniqueActions(id),a=i%2===1&&unique.length?unique[1]||unique[0]:accents[i];
+     const state=typeof a==='string'?a:(a.id||accents[i]);
+     const active=k.states[state]?state:accents[i], ms=k.states[active].frameMs;
+     const t=(now+i*427)%5800, moving=t<ms*12, motion=moving?active:'idle';
+     const f=reduce.matches?0:Math.floor((moving?t:t-ms*12)/k.states[motion].frameMs)%12;
+     const col=i%5,row=Math.floor(i/5),x=35+col*119,y=row*143+8;
+     g.fillStyle=document.documentElement.dataset.theme==='dark'?'#665078':'#c8b6d6';g.fillRect(x-5,y+122,92,2);
+     g.drawImage(k.frame(id,reduce.matches?'idle':motion,f,i%3===1?'left':'right','auto'),x,y,84,112);
+   });
+ }
  function downloadCanvas(c,file){c.toBlob(blob=>{if(!blob)return;const a=document.createElement('a'),url=URL.createObjectURL(blob);a.href=url;a.download=file;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500);$('status').textContent=I18n.label('saved');});}
  $('exportFrame').onclick=()=>{if(view==='portrait'){const im=portraits.get(selected);if(im?.naturalWidth){const c=document.createElement('canvas');c.width=im.naturalWidth;c.height=im.naturalHeight;c.getContext('2d').drawImage(im,0,0);downloadCanvas(c,selected+'-portrait.png');}return;}downloadCanvas(kit(selected).frame(selected,action,frame,direction,expression),selected+'-'+action+'-'+direction+'-'+String(frame+1).padStart(2,'0')+'.png');};
  $('exportSheet').onclick=()=>{const c=document.createElement('canvas');c.width=576;c.height=128;const g=c.getContext('2d');['right','left'].forEach((d,row)=>{for(let n=0;n<12;n++)g.drawImage(kit(selected).frame(selected,action,n,d,expression),n*48,row*64);});downloadCanvas(c,selected+'-'+action+'-right-left.png');};
