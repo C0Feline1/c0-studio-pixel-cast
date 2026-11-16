@@ -1,0 +1,9 @@
+# Licenses
+
+Copyright © 2026 C0 STUDIO.
+
+- Character artwork, sprites, portraits, badges, original scenes and story content: **Creative Commons Attribution 4.0 International (CC BY 4.0)**. See [full terms](licenses/CC-BY-4.0.txt).
+- Website and rendering code (HTML, CSS, JavaScript), tools and animation resource configuration: **MIT**. See [full terms](licenses/MIT.txt). The artwork rendered by the code remains CC BY 4.0.
+- Embedded third-party fonts retain their own licenses; see [ATTRIBUTION.md](ATTRIBUTION.md) and `licenses/`.
+
+You may use, modify and redistribute the C0 STUDIO assets, including in commercial projects. Credit **C0 STUDIO**, link to the CC BY 4.0 license, retain applicable notices, and indicate changes. No payment or donation is required. These licenses do not grant rights to third-party trademarks or imply endorsement.

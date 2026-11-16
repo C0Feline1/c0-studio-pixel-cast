@@ -1,0 +1,58 @@
+.theme-switch{display:flex;align-items:center;border:1px solid var(--line);margin-left:4px;flex-shrink:0}.theme-switch button{display:flex;align-items:center;justify-content:center;gap:5px;min-height:30px;padding:5px 8px;font:10px var(--mono);color:var(--muted);border-bottom:2px solid transparent}.theme-switch button+button{border-left:1px solid var(--line)}.theme-switch button[aria-pressed=true]{color:var(--purple);background:var(--lavender);border-bottom-color:var(--purple)}.theme-switch svg{width:13px;height:13px;fill:none;stroke:currentColor;stroke-width:1.5}.site-header{gap:20px}.language-switch{margin-left:0}
+html[data-theme=dark]{--paper:#141319;--white:#1d1b23;--ink:#ece7f1;--muted:#aaa0b6;--line:#393240;--purple:#ba9bdf;--lavender:#382d45;--mint:#283d34;--accent:#c19bdd;color-scheme:dark}
+html[data-theme=dark] .site-header{background:rgba(20,19,25,.98)}
+html[data-theme=dark] .pixel-mark{background:#af8bd5;color:#17121f}
+html[data-theme=dark] .primary{background:#a887d0;color:#191322;border-color:#c5a6e7;box-shadow:3px 3px 0 #594368}
+html[data-theme=dark] .primary:hover{background:#bd9ce2;box-shadow:4px 4px 0 #594368}
+html[data-theme=dark] .secondary{border-color:#716080;box-shadow:3px 3px 0 #3e324c}
+html[data-theme=dark] .secondary:hover{background:#352b42;box-shadow:4px 4px 0 #3e324c}
+html[data-theme=dark] .button:active{box-shadow:none}
+html[data-theme=dark] .cast-illustration{background:#26212f;border-color:#50405e}
+html[data-theme=dark] .cast-illustration:before{border-color:#45374f}
+html[data-theme=dark] .art-label,html[data-theme=dark] .art-caption{color:#b5a3c5}
+html[data-theme=dark] .workshop,html[data-theme=dark] .theater-frame{border-color:#55465f;box-shadow:5px 5px 0 #26202e}
+html[data-theme=dark] .cast-sidebar{background:#211d28}
+html[data-theme=dark] .cast-button span{color:#b6a7c3}
+html[data-theme=dark] .cast-button:hover{background:#322839}
+html[data-theme=dark] .cast-button[aria-pressed=true]{background:#372b43;border-color:#a88ac5;box-shadow:2px 2px 0 #554062}
+html[data-theme=dark] .cast-button[aria-pressed=true] span{color:#e1c9f5}
+html[data-theme=dark] .sprite-stage{background-color:#222127;background-image:linear-gradient(45deg,#2b283180 25%,transparent 25%),linear-gradient(-45deg,#2b283180 25%,transparent 25%),linear-gradient(45deg,transparent 75%,#2b283180 75%),linear-gradient(-45deg,transparent 75%,#2b283180 75%)}
+html[data-theme=dark] .sprite-stage.no-grid{background-image:none}
+html[data-theme=dark] .stage-baseline{border-color:#4c4056}
+html[data-theme=dark] .stage-label span:first-child{color:#b3a2c1}
+html[data-theme=dark] .playback,html[data-theme=dark] .theater-options{background:#211c29}
+html[data-theme=dark] .icon-button{background:#29232f;border-color:#51425f;color:#e2d5ee}
+html[data-theme=dark] .icon-button:hover{background:#42314f;border-color:#a686c0}
+html[data-theme=dark] .quiet{background:transparent;border-color:transparent}
+html[data-theme=dark] .filmstrip button{background:#28212f}
+html[data-theme=dark] .filmstrip button[aria-pressed=true]{background:#41304f;border-color:#b591d3}
+html[data-theme=dark] .segmented{border-color:#594666}
+html[data-theme=dark] .segmented button{background:#26202e;color:#b7a6c5}
+html[data-theme=dark] .segmented button+button{border-color:#594666}
+html[data-theme=dark] .segmented button[aria-pressed=true]{background:#443151;color:#ead7f9;box-shadow:inset 0 -2px #bb94d9}
+html[data-theme=dark] .action-grid button{background:#25202d;border-color:#51415c;color:#c1b4cd}
+html[data-theme=dark] .unique-actions button{background:#2a2232;border-color:#4b3d57;color:#c1b4cd}
+html[data-theme=dark] .action-grid button:hover,html[data-theme=dark] .unique-actions button:hover{background:#3b2c47;border-color:#b093c5}
+html[data-theme=dark] .action-grid button[aria-pressed=true],html[data-theme=dark] .unique-actions button[aria-pressed=true]{background:#4c365b;border-color:#b08acb;color:#f0defc;box-shadow:inset 0 -2px #89669e}
+html[data-theme=dark] .expression-row select,html[data-theme=dark] .theater-options select{background:#29222f;color:#d2bedf;border-color:#5b4769}
+html[data-theme=dark] .theater-cast{border-color:#55465f}
+html[data-theme=dark] .theater-cast button{color:#bca8ca}
+html[data-theme=dark] .theater-cast button[aria-pressed=true]{background:#544060;color:#f3e7fa;border-color:#544060}
+html[data-theme=dark] .theater-cast button:hover:not([aria-pressed=true]){background:#32263c}
+html[data-theme=dark] .theater-titlebar{background:#302338;color:#d6bce7}
+html[data-theme=dark] .story-column li{border-color:#3a2d45}
+html[data-theme=dark] .active>.beat-button{background:#33243f;border-color:#bf96de}
+html[data-theme=dark] .beat-button:hover{background:#2c2136}
+html[data-theme=dark] .beat-button>em{color:#bf9dd2}
+html[data-theme=dark] .sound-button{border-color:#9b79af;color:#d1b0e7}
+html[data-theme=dark] .sound-button[aria-pressed=true]{background:#2a4135;border-color:#82b99b;color:#bce4cc}
+html[data-theme=dark] .download-table{border-color:#55465f}
+html[data-theme=dark] .text-link{border-color:#816393;color:#cbb3df}
+html[data-theme=dark] .text-link:hover{color:#eedafa}
+html[data-theme=dark] :is(.sidebar-heading,.identity .eyebrow,.control-row>label,.control-group h4,.expression-row>label,.room-caption span:first-child,.download-notes h4){color:#bfa6d0}
+html[data-theme=dark] :is(.preview-bottom,.filmstrip span,.microcopy,.playback output,.playback select,.theater-controls output,.theater-controls select,.room-caption,.theater-options label,.sound-details,.story-description,.stage-notes,.download-table p,.download-notes p,.file-number,.file-format,footer p,.theater-exports button){color:#b0a0bc}
+html[data-theme=dark] .language-switch button{color:#a697b3}
+html[data-theme=dark] .language-switch button[aria-pressed=true]{color:#d4b3ee}
+@media(max-width:1100px){.site-header{gap:12px}.site-header nav{gap:16px}}
+@media(max-width:850px){.theme-switch .theme-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.theme-switch button{width:29px;padding:5px}.site-header nav{gap:12px}}
+@media(max-width:600px){.site-header{gap:10px}.theme-switch{margin-left:auto}.language-switch{margin-left:0}.theme-switch button{width:28px}.site-header .wordmark{letter-spacing:.5px}html[data-theme=dark] .workshop,html[data-theme=dark] .theater-frame{box-shadow:3px 3px 0 #26202e}}
