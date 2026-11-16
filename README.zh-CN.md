@@ -2,7 +2,7 @@
 
 **像素很小，个性很大。**
 
-[English](README.md) · [下载全部角色](downloads/all-characters.zip) · [素材规格](assets/README.md) · [署名与创作说明](ATTRIBUTION.md)
+[English](README.md) · [在线预览](https://c0feline1.github.io/c0-studio-pixel-cast/) · [下载全部角色](downloads/all-characters.zip) · [素材规格](assets/README.md) · [署名与创作说明](ATTRIBUTION.md)
 
 ![默认黑夜主题的角色展示页](docs/images/gallery-dark.png)
 

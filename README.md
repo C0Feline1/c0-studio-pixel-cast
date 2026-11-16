@@ -6,7 +6,7 @@
 
 Ten pixel companions, an animation workshop, and a little theater.
 
-[中文说明](README.zh-CN.md) · [Download all characters](downloads/all-characters.zip) · [Sprite guide](assets/README.md) · [Credits & licenses](ATTRIBUTION.md)
+[中文说明](README.zh-CN.md) · [Live gallery](https://c0feline1.github.io/c0-studio-pixel-cast/) · [Download all characters](downloads/all-characters.zip) · [Sprite guide](assets/README.md) · [Credits & licenses](ATTRIBUTION.md)
 
 ![The Pixel Cast gallery in its default dark theme](docs/images/gallery-dark.png)
 
