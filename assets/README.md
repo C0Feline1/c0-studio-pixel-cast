@@ -20,3 +20,24 @@ Copy each complete character directory into your Godot project before using its 
 The metadata retains the original internal IDs and Chinese motion notes for compatibility; `nameEn` adds English display names. The original manifest version describes the source export, not the release number of this gallery.
 
 Artwork: CC BY 4.0, credit C0 STUDIO. See ATTRIBUTION.md and LICENSE.
+
+## Open directly in Aseprite
+
+Each character folder also includes four editable Aseprite documents:
+
+- `<character-id>.aseprite`: all 16 actions, 384 frames, 32 tags such as `idle_right` and `idle_left`. Each tag contains 12 frames.
+- `expressions.aseprite`: 24 frames, with named tags for 12 expressions in two directions. These are individual expression poses, displayed at a neutral 100 ms per frame for browsing.
+- `portrait.aseprite` and `badge.aseprite`: single-frame artwork at the original dimensions.
+
+Open these with **File → Open**; no sprite-sheet import is necessary. These are flattened, editable pixel frames reconstructed from the PNGs, not layered drawing originals. Hair, clothing and body layers are not reconstructed.
+
+Aseprite stores integer-millisecond durations. Fractional source timings are distributed across frames by rounding cumulative timestamps, keeping each action cycle within 0.5 ms of its original total. Exact source timings remain in `manifest.json`.
+
+Generated and reopened in Aseprite 1.3.18.6; all 40 documents and 4,100 frames were checked against their source pixels, tags and saved durations. To rebuild using a licensed local Aseprite installation, run from the repository root:
+
+```sh
+aseprite -b --script-param root=. --script tools/export_aseprite.lua
+python tools/package.py
+```
+
+The `.aseprite` artwork is covered by CC BY 4.0, just like the PNGs. The exporter script is MIT. Aseprite itself is not bundled.

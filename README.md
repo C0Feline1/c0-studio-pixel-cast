@@ -22,6 +22,10 @@ A collection by **C0 STUDIO**, inspired by the creator's everyday experiences wi
 
 The studio trio: **F1 · C0 · X0**. The AI-inspired companions: **Offline Dragon · Rice Whale · Lady Grey · Sugar Twins · Lady Mischief · Moon Archivist · Sugar Bun**.
 
+## Aseprite-ready files
+
+All three asset ZIPs include **40 `.aseprite` files**: an animation document, expression poses, portrait and badge for each character. Open and edit immediately; actions and facing directions are tagged. These contain flattened pixel artwork, not reconstructed drawing layers. See the [Aseprite guide](assets/README.md#open-directly-in-aseprite).
+
 ## A gallery you can play with
 
 - Preview animations, switch expressions and facing direction, and inspect individual frames.

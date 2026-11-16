@@ -17,6 +17,18 @@
 - 角色预览、逐帧查看、表情和朝向切换、PNG 单帧与图集导出。
 - 默认英文和黑夜主题，右上角切换中文/英文、白天/黑夜，并记住选择。
 
+## Aseprite 直接编辑
+
+三个素材 ZIP 均包含 40 个 `.aseprite` 文件，每位角色 4 个：
+
+- 角色 ID 同名文件：全部 16 个动作，384 帧、32 个动作与朝向标签，例如 `idle_right`、`idle_left`。
+- `expressions.aseprite`：12 种表情 × 2 个朝向，共 24 帧，按表情名称标记；100 毫秒仅供浏览，不表示原动作时长。
+- `portrait.aseprite` 与 `badge.aseprite`：原尺寸的立绘和徽章。
+
+使用 Aseprite 的“文件 → 打开”即可。文件由 PNG 无损整理，每帧为合并图层；不会还原头发、衣服等原始分层。帧时长按 Aseprite 的整数毫秒精度分配，每个动作周期与原始总时长相差不超过 0.5 毫秒，精确原值仍保存在 manifest.json。
+
+已经在 Aseprite 1.3.18.6 中重新打开并校验 40 份文件、4,100 帧。美术仍采用 CC BY 4.0，导出脚本采用 MIT，不附带 Aseprite 软件本身。
+
 ## 怎么使用
 
 只需要素材：下载[十人完整包](downloads/all-characters.zip)、[工作室三人组](downloads/studio-cast.zip)或[七位 AI 灵感伙伴](downloads/ai-inspired-cast.zip)。
